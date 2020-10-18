@@ -29,8 +29,7 @@
                Помощь
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Разработчики
-                </a>
+                <a class="dropdown-item" href="#">Разработчики</a>
                 <a class="dropdown-item" href="#">Полезные ссылки</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#">О сайте</a>
@@ -38,7 +37,7 @@
             </div>
             </li>
           </ul>
-          <form class="form-inline my-2 my-lg-0">
+          <form action="https://natribu.org/" target="_blank" class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Поиск" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Поиск</button>
           </form>
@@ -50,7 +49,47 @@
         <p class="lead">свои научные работы, получать информацию об их уникальности и смотреть отзывы ваших научных руководителей.</p>
         <hr class="my-4">
         <p class="lead">
-          <a class="btn btn-primary btn-lg" href="#" role="button" class="btn btn-primary">Добавить работу</a>
+          <a class="btn btn-primary btn-lg" href="#" role="button" class="btn btn-primary"data-toggle="modal" data-target="#exampleModal">Добавить работу</a>
+          <!-- Modal -->
+<div class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Добавить работу</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <label for="recipient-name" class="col-form-label">Название работы</label>
+            <input type="text" class="form-control" id="recipient-name" placeholder="Например, программист с возможностью программирования">
+      </div>
+      <div class="form-group col-lg-5">
+        <label for="exampleFormControlSelect1">Научный руководитель</label>
+        <select class="form-control" id="exampleFormControlSelect1">
+          <option>Щетинский И.М.</option>
+          <option>Соловьев Е.М.</option>
+          <option>Герман И.А.</option>
+          <option>Имелинский К.А.</option>
+          <option>Культиватор #0844960439х7326565723v1.7</option>
+        </select>
+      </div>
+      <div class="form-group col-lg-5">
+        <label for="exampleFormControlSelect1">Язык публикации</label>
+        <select class="form-control" id="exampleFormControlSelect1" placeholder="Укажите язык...">
+          <option>Русский</option>
+          <option>Английский</option>
+        </select>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+        <button type="button" class="btn btn-primary">Отправить</button>
+      </div>
+      </div>
+        </div>
+    </div>
+  </div>
+</div>
           </div> 
           <div class="container">
             <div class="row mb-2">
